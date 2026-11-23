@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f4ed">
+  <meta name="description" content="The basics of Pallino: where to use it, how to write a task, notes, spaces and Pallino Cloud.">
+  <title>Docs · Pallino</title>
+  <link rel="canonical" href="https://pallino.me/docs/">
+  <link rel="icon" href="../assets/favicon.ico" sizes="any">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <style>
+    :root{--cream:#f7f4ed;--ink:#33291f;--muted:#71685e;--line:#ddd7cc}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.7 Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+    header,main,footer{width:min(720px,calc(100% - 40px));margin-inline:auto}
+    header{display:flex;justify-content:space-between;align-items:center;padding:26px 0}
+    header img{display:block;height:30px;width:auto}
+    a{color:inherit;text-underline-offset:3px}
+    a:focus-visible{outline:3px solid #2f5fd0;outline-offset:4px}
+    h1{font-size:44px;line-height:1.1;letter-spacing:-1.8px;font-weight:500;margin:34px 0 12px}
+    h2{font-size:23px;letter-spacing:-.6px;font-weight:500;margin:44px 0 10px}
+    p,ul{margin:0 0 14px}
+    li{margin-bottom:5px}
+    .muted{color:var(--muted)}
+    .table{overflow-x:auto}
+    table{width:100%;border-collapse:collapse;font-size:15px}
+    th,td{text-align:left;padding:10px 14px 10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+    code,kbd{font:14px/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;background:#ece5d8;border-radius:6px;padding:2px 6px}
+    td code,kbd{white-space:nowrap}
+    td code{display:inline-block}
+    footer{margin-top:60px;padding:24px 0 40px;border-top:1px solid var(--line);font-size:14px;display:flex;gap:22px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+<header>
+  <a href="../" aria-label="Pallino, home"><img src="../assets/wordmark.svg" alt="pallino" width="85" height="30"></a>
+  <a href="https://cloud.pallino.me/">Open Pallino ↗</a>
+</header>
+<main>
+  <h1>Docs</h1>
+  <p class="muted">The basics, for now. This page will grow with Pallino.</p>
+
+  <h2>Where to use it</h2>
+  <ul>
+    <li><b>Web app</b>, on a computer or a phone: <a href="https://cloud.pallino.me/">cloud.pallino.me</a>. To install it, use the install icon in the address bar (Chrome, Edge), or “Add to Home screen” in the menu of your phone’s browser.</li>
+    <li><b>Android app</b>: coming soon on Google Play.</li>
+  </ul>
+  <p>No account is needed: what you write stays on the device, and works offline.</p>
+
+  <h2>Write a task</h2>
+  <p>Write it as you would say it, in English or in Italian. For example:</p>
+  <p><code>Send the draft tomorrow at 10:00 !! #thesis &amp;Thesis</code></p>
+  <div class="table"><table>
+    <thead><tr><th>You write</th><th>Pallino reads</th></tr></thead>
+    <tbody>
+      <tr><td><code>tomorrow</code> <code>Friday at 6 pm</code></td><td>The day and the time</td></tr>
+      <tr><td><code>by Friday</code></td><td>A deadline</td></tr>
+      <tr><td><code>every Monday</code></td><td>A task that repeats</td></tr>
+      <tr><td><code>!!!</code> <code>!!</code> <code>!</code></td><td>Urgent, high or medium priority</td></tr>
+      <tr><td><code>#thesis</code></td><td>A tag</td></tr>
+      <tr><td><code>&amp;Thesis</code></td><td>A project</td></tr>
+      <tr><td><code>@Luca</code></td><td>The person it is for</td></tr>
+      <tr><td><code>~1h30</code></td><td>How long it takes</td></tr>
+      <tr><td><code>;tomorrow</code></td><td>A reminder</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Notes</h2>
+  <p>Notes are Markdown: headings, lists, <code>- [ ]</code> to-dos, <code>**bold**</code>, <code>==highlights==</code>, tables, code, <code>$formulas$</code> and <code>&gt; [!TIP]</code> callouts. Lists and bookmarks are in Notes too.</p>
+
+  <h2>Spaces</h2>
+  <p>A space keeps together the tasks, notes and projects of one part of your life, in its own colour.</p>
+
+  <h2>Pallino Cloud</h2>
+  <p>An optional account that keeps tasks, notes, projects and spaces in step across your devices. With it you can share a space by inviting people with a link, or with a QR code from Android.</p>
+
+  <h2>Shortcuts</h2>
+  <p>In the web app on a computer, press <kbd>?</kbd> to see them all. <kbd>N</kbd> adds, <kbd>S</kbd> chooses the space, <kbd>Ctrl K</kbd> searches.</p>
+</main>
+<footer>
+  <a href="../">pallino.me</a>
+  <a href="../#faq">FAQ</a>
+  <a href="../#privacy">Privacy</a>
+</footer>
+</body>
+</html>

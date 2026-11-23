@@ -4,10 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f7f4ed">
-  <meta name="description" content="Make room for your ideas. Pallino collects tasks, notes and lists, understands how you write and helps you find the next thing to do. Discover the Android app.">
+  <meta name="description" content="Make room for your ideas. Pallino collects tasks, notes and lists, understands how you write and helps you find the next thing to do. On the web, on your computer and on Android.">
+  <link rel="canonical" href="https://pallino.me/">
   <meta property="og:title" content="Pallino — Less on your mind. More room for you.">
   <meta property="og:description" content="Tasks, notes and ideas. A small place to put everything else in order.">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pallino.me/">
+  <meta property="og:site_name" content="Pallino">
   <title>Pallino — Less on your mind. More room for you.</title>
   <link rel="icon" href="assets/favicon.ico" sizes="any">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -32,6 +35,14 @@
   <symbol id="i-share" viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></symbol>
   <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 12a8 8 0 1 1-2.6-5.9M20 4v5h-5"/></symbol>
   <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5Z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3Z"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="11" rx="2"/><path d="M2 19h20"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><path d="M11 18.5h2"/></symbol>
+  <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.2a6.5 6.5 0 0 1 3.5 5.8"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="16" r="4.5"/><path d="m11.2 12.8 8.3-8.3m-3 3 3 3m-6 0 2 2"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="m4 18 5.5-5 3.5 3 3-2.5 4.5 4"/></symbol>
+  <symbol id="i-sigma" viewBox="0 0 24 24"><path d="M18 8V5H6l6 7-6 7h12v-3"/></symbol>
+  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4.5L6 21Z"/></symbol>
   <symbol id="i-play" viewBox="0 0 24 24"><path d="m5 3 14 9-14 9Z"/></symbol>
 </defs></svg>
 <header class="site-header"><div class="header">
@@ -39,8 +50,8 @@
     <img class="brand-app-icon" src="assets/app-icon.svg" alt="" width="40" height="40">
     <img class="brand-wordmark" src="assets/wordmark.svg" alt="pallino" width="90" height="32">
   </a>
-  <nav aria-label="Main navigation"><a href="#features">How it works</a><a href="#app">Inside the app</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a></nav>
-  <span class="button small dark is-locked" role="link" aria-disabled="true" title="Coming soon on Google Play">Coming soon <svg><use href="#i-lock"/></svg></span>
+  <nav aria-label="Main navigation"><a href="#features">How it works</a><a href="#app">Inside the app</a><a href="#web">Every screen</a><a href="#privacy">Privacy</a><a href="#faq">FAQ</a><a href="docs/">Docs</a></nav>
+  <a class="button small dark" href="https://cloud.pallino.me/">Open Pallino <svg><use href="#i-share"/></svg></a>
 </div></header>
 <main id="main">
 <section class="hero wrap">
@@ -48,8 +59,8 @@
     <p class="eyebrow"><span class="status-dot"></span> A SMALL PLACE FOR YOUR BIG IDEAS</p>
     <h1>Less on<br>your mind.<br>More room<br>for <span class="serif">you.</span><span class="heading-dot"></span></h1>
     <p class="lead">That passing thought. Tomorrow’s to-do.<br class="desktop-break"> The idea you can’t lose. Put it all in Pallino,<br class="desktop-break"> and get back to what matters.</p>
-    <div class="hero-actions"><span class="button dark store-link is-locked" role="link" aria-disabled="true" title="Coming soon on Google Play"><svg><use href="#i-play"/></svg><span><small>COMING SOON ON</small>Google Play</span><svg class="store-arrow"><use href="#i-lock"/></svg></span><a class="text-link" href="#app">Take a look <span>↘</span></a></div>
-    <p class="hero-footnote"><span class="tiny-android">✳</span> Made for Android. Works offline too.</p>
+    <div class="hero-actions"><a class="button dark store-link" href="https://cloud.pallino.me/"><svg><use href="#i-globe"/></svg><span><small>DESKTOP &amp; MOBILE</small>Open the web app</span><svg class="store-arrow"><use href="#i-share"/></svg></a><span class="button ghost store-link is-locked" role="link" aria-disabled="true" title="Coming soon on Google Play"><svg><use href="#i-play"/></svg><span><small>COMING SOON ON</small>Google Play</span><svg class="store-arrow"><use href="#i-lock"/></svg></span><a class="text-link" href="#app">Take a look <span>↘</span></a></div>
+    <p class="hero-footnote"><span class="tiny-android">✳</span> On the web, on your computer, on Android. Works offline too.</p>
   </div>
   <div class="hero-stage" aria-label="Preview of the Pallino app">
     <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-disc"></div>
@@ -90,7 +101,7 @@
       <div class="app-block capture-block">
         <div class="capture-block-bar">
           <span class="space-selector-pill"><span class="space-name-label">University</span><svg><use href="#i-chevron"/></svg></span>
-          <span class="mode-segments"><b><svg><use href="#i-check"/></svg>Task</b><span><svg><use href="#i-note"/></svg></span><span><svg><use href="#i-list"/></svg></span></span>
+          <span class="mode-segments"><b><svg><use href="#i-check"/></svg>Task</b><span><svg><use href="#i-note"/></svg></span><span><svg><use href="#i-list"/></svg></span><span><svg><use href="#i-bookmark"/></svg></span></span>
         </div>
         <div class="sentence-demo">
           <span><span class="space-task-label">Send the draft</span> <em>tomorrow</em><br><em>at 10:00</em> <strong>!!</strong> <u class="space-tag-label">#thesis</u> <b class="space-proj-label">&amp;Thesis</b></span>
@@ -107,7 +118,7 @@
     <article class="feature-card notes-card reveal">
       <div class="card-meta"><span>02 / COLLECT</span><svg><use href="#i-note"/></svg></div>
       <h3>Every idea<br>deserves a place.</h3>
-      <p>Markdown notes, lists and projects. From a stray thought to the next step, in the colours of your spaces.</p>
+      <p>Markdown notes, lists, bookmarks and projects. From a stray thought to the next step, in the colours of your spaces.</p>
       <div class="app-block note-card-demo">
         <div class="note-card-head">
           <b>Thesis ideas</b>
@@ -160,7 +171,7 @@
       <div class="showcase-copy">
         <span class="showcase-number" aria-hidden="true">01 / Capture</span>
         <h3 id="showcase-title">A thought?<br>Catch it on the fly.</h3>
-        <p id="showcase-description">Task, note or list: choose how to capture what is on your mind. Type naturally or dictate a task, and let the ideas keep coming.</p>
+        <p id="showcase-description">Task, note, list or bookmark: choose how to capture what is on your mind. Type naturally or dictate a task, and let the ideas keep coming.</p>
         <ul id="showcase-points">
           <li>Recognises dates, times, deadlines and duration as you type</li>
           <li>Projects (&amp;), tags (#) and reminders (;) in a single sentence</li>
@@ -177,22 +188,50 @@
           </div>
         </div>
       </div>
-      <div class="showcase-device"><div class="showcase-ring"></div><span class="showcase-spark" aria-hidden="true">✳</span><div class="phone showcase-phone"><div class="phone-screen"><div id="dynamic-screen"><button class="screenshot-open" data-space-shot="capture" data-image="assets/screenshots/capture-blue.webp" data-caption="Capture · dates, priorities, tags and projects recognised as you type" aria-label="Enlarge: Capture · dates, priorities, tags and projects recognised as you type"><img src="assets/screenshots/capture-blue.webp" alt="Capture · dates, priorities, tags and projects recognised as you type. Screenshot of the Pallino app." width="1080" height="2400"></button></div></div></div><span class="device-annotation">small things, done well. <span>↗</span></span></div>
+      <div class="showcase-device"><div class="showcase-ring"></div><span class="showcase-spark" aria-hidden="true">✳</span><div class="phone showcase-phone"><div class="phone-screen"><div id="dynamic-screen"><button class="screenshot-open" data-space-shot="capture" data-image="assets/screenshots/capture-blue.webp" data-caption="Capture · dates, priorities, tags and projects recognised as you type" aria-label="Enlarge: Capture · dates, priorities, tags and projects recognised as you type"><img src="assets/screenshots/capture-blue.webp" alt="Capture · dates, priorities, tags and projects recognised as you type. Screenshot of the Pallino app." width="1080" height="2424"></button></div></div></div><span class="device-annotation">small things, done well. <span>↗</span></span></div>
     </div>
-    <p class="preview-note">Real app screenshots with demo data. Tap an image to enlarge it.</p>
+    <p class="preview-note">Real screenshots of Pallino 0.15 for Android, with demo data. Tap an image to enlarge it.</p>
+  </div>
+</section>
+<section id="web" class="web-section wrap section">
+  <div class="gallery-heading reveal"><div><p class="eyebrow">ON EVERY SCREEN.</p><h2>Same little world.<br>A bigger <span class="serif">window.</span></h2></div><p>Pallino is a web app too.<br>Open it, install it, and it works offline.</p></div>
+  <div class="showcase-tabs web-tabs" role="tablist" aria-label="Explore the web app">
+      <button id="web-tab-tasks" role="tab" aria-selected="true" aria-controls="web-panel" data-web-screen="tasks" tabindex="0"><span>Tasks</span></button>
+      <button id="web-tab-add" role="tab" aria-selected="false" aria-controls="web-panel" data-web-screen="add" tabindex="-1"><span>Add</span></button>
+      <button id="web-tab-notes" role="tab" aria-selected="false" aria-controls="web-panel" data-web-screen="notes" tabindex="-1"><span>Notes</span></button>
+      <button id="web-tab-split" role="tab" aria-selected="false" aria-controls="web-panel" data-web-screen="split" tabindex="-1"><span>Side by side</span></button>
+      <button id="web-tab-spaces" role="tab" aria-selected="false" aria-controls="web-panel" data-web-screen="spaces" tabindex="-1"><span>Spaces</span></button>
+      <button id="web-tab-dark" role="tab" aria-selected="false" aria-controls="web-panel" data-web-screen="dark" tabindex="-1"><span>Dark</span></button>
+  </div>
+  <div id="web-panel" class="web-panel reveal" role="tabpanel" aria-labelledby="web-tab-tasks" tabindex="0">
+    <div class="web-stage">
+      <div class="browser"><div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span><svg><use href="#i-lock"/></svg>cloud.pallino.me</span></div><div class="browser-screen" id="web-screen"></div></div>
+      <div class="phone web-phone"><div class="phone-screen"><div id="web-phone-screen"></div></div></div>
+    </div>
+    <p class="web-caption" id="web-caption"></p>
+  </div>
+  <noscript><p class="web-caption"><a class="text-link" href="https://cloud.pallino.me/">Open the web app</a></p></noscript>
+  <div class="platform-grid">
+    <article class="platform-card reveal"><span class="extra-icon"><svg><use href="#i-laptop"/></svg></span><h3>On your computer</h3><p>A task beside the list, two notes side by side and keyboard shortcuts. Install it from the browser’s address bar.</p><a class="button dark small" href="https://cloud.pallino.me/">Open the web app <svg><use href="#i-share"/></svg></a></article>
+    <article class="platform-card reveal"><span class="extra-icon"><svg><use href="#i-phone"/></svg></span><h3>In your phone’s browser</h3><p>The same web app, made for your thumb. Choose “Add to Home screen” and it opens like any other app.</p><a class="button dark small" href="https://cloud.pallino.me/">Open the web app <svg><use href="#i-share"/></svg></a></article>
+    <article class="platform-card reveal"><span class="extra-icon"><svg><use href="#i-play"/></svg></span><h3>The Android app</h3><p>Everything, plus Focus and its daily review, dictation, reminders with the app closed, QR invitations and on-device AI.</p><span class="button ghost small is-locked" role="link" aria-disabled="true" title="Coming soon on Google Play">Soon on Google Play <svg><use href="#i-lock"/></svg></span></article>
   </div>
 </section>
 <section class="screen-gallery-section wrap section">
-  <div class="gallery-heading reveal"><div><p class="eyebrow">UP CLOSE, IT’S EVEN BETTER.</p><h2>Every detail,<br>in its <span class="serif">place.</span></h2></div><p>Tap a screen to explore it.</p></div>
+  <div class="gallery-heading reveal"><div><p class="eyebrow">UP CLOSE, IT’S EVEN BETTER.</p><h2>Every detail,<br>in its <span class="serif">place.</span></h2></div><p>Pallino for Android. Tap a screen to explore it.</p></div>
   <div class="screen-gallery">
     <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/task-detail.webp" data-caption="Every task, explained · Task detail with deadline, reminders and the ranking reason" aria-label="Enlarge: Every task, explained"><img src="assets/screenshots/task-detail.webp" alt="Every task, explained: Task detail with deadline, reminders and the ranking reason, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Every task, explained</h3><p>When, deadline, reminders, project, and the reason it sits at the top of your list.</p></figcaption></figure>
+    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/review.webp" data-caption="Today, in review · Review of today’s tasks with swipe actions" aria-label="Enlarge: Today, in review"><img src="assets/screenshots/review.webp" alt="Today, in review: Review of today’s tasks with swipe actions, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Today, in review</h3><p>Done, tomorrow, skip or let go: decide with a single swipe.</p></figcaption></figure>
     <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/filters.webp" data-caption="Filter your way · Filters for priority, date, status and project" aria-label="Enlarge: Filter your way"><img src="assets/screenshots/filters.webp" alt="Filter your way: Filters for priority, date, status and project, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Filter your way</h3><p>Priority, date, status, project and assignee: a few choices to narrow things down.</p></figcaption></figure>
     <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/search.webp" data-caption="One search for everything · Single search across tasks and notes" aria-label="Enlarge: One search for everything"><img src="assets/screenshots/search.webp" alt="One search for everything: Single search across tasks and notes, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>One search for everything</h3><p>Tasks and notes in a single search, filterable by space.</p></figcaption></figure>
+    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/note-writing.webp" data-caption="Markdown writing · Note editor with callouts, formulas and tables in Markdown" aria-label="Enlarge: Markdown writing"><img src="assets/screenshots/note-writing.webp" alt="Markdown writing: Note editor with callouts, formulas and tables in Markdown, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Markdown writing</h3><p>Write directly with lists, highlights, pictures and to-dos.</p></figcaption></figure>
+    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/note-preview.webp" data-caption="Room for words · Formatted note with callouts, a formula and a table" aria-label="Enlarge: Room for words"><img src="assets/screenshots/note-preview.webp" alt="Room for words: Formatted note with callouts, a formula and a table, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Room for words</h3><p>Callouts, formulas, tables and highlights, drawn as you would expect.</p></figcaption></figure>
+    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/note-menu.webp" data-caption="Yours to take along · Note menu with sharing, PDF, History and templates" aria-label="Enlarge: Yours to take along"><img src="assets/screenshots/note-menu.webp" alt="Yours to take along: Note menu with sharing, PDF, History and templates, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Yours to take along</h3><p>Share it, print it, save it as PDF, or go back to an earlier text with History.</p></figcaption></figure>
+    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/space-invite.webp" data-caption="Better together · Invitation to a shared space, with a QR code and a link" aria-label="Enlarge: Better together"><img src="assets/screenshots/space-invite.webp" alt="Better together: Invitation to a shared space, with a QR code and a link, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Better together</h3><p>Invite someone to a space with a QR code or a link, good for one person.</p></figcaption></figure>
+    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/space-people.webp" data-caption="Who’s in, at a glance · People and members of a shared space" aria-label="Enlarge: Who’s in, at a glance"><img src="assets/screenshots/space-people.webp" alt="Who’s in, at a glance: People and members of a shared space, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Who’s in, at a glance</h3><p>Assign tasks to people, see who shares a space, and remove them when it’s time.</p></figcaption></figure>
+    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/api-keys.webp" data-caption="Keys for your tools · New API key with what it may do in each space" aria-label="Enlarge: Keys for your tools"><img src="assets/screenshots/api-keys.webp" alt="Keys for your tools: New API key with what it may do in each space, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Keys for your tools</h3><p>Let a program or an MCP server act for you, only where you allow it.</p></figcaption></figure>
+    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/profile.webp" data-caption="Your little world · Profile with stats and spaces" aria-label="Enlarge: Your little world"><img src="assets/screenshots/profile.webp" alt="Your little world: Profile with stats and spaces, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Your little world</h3><p>Different spaces with their own prompts, stats and known places.</p></figcaption></figure>
     <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/welcome-offline.webp" data-caption="Start where you like · Welcome screen with Online and Offline modes" aria-label="Enlarge: Start where you like"><img src="assets/screenshots/welcome-offline.webp" alt="Start where you like: Welcome screen with Online and Offline modes, in Pallino." width="1080" height="2424" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Start where you like</h3><p>Online with Pallino Cloud, or offline and only on this phone.</p></figcaption></figure>
-    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/note-writing.webp" data-caption="Markdown writing · Note editor with lists, highlights and to-dos" aria-label="Enlarge: Markdown writing"><img src="assets/screenshots/note-writing.webp" alt="Markdown writing: Note editor with lists, highlights and to-dos, in Pallino." width="1080" height="2400" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Markdown writing</h3><p>Write directly with lists, highlights and to-dos.</p></figcaption></figure>
-    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/note-preview.webp" data-caption="Room for words · Formatted note with highlight and checklist" aria-label="Enlarge: Room for words"><img src="assets/screenshots/note-preview.webp" alt="Room for words: Formatted note with highlight and checklist, in Pallino." width="1080" height="2400" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Room for words</h3><p>A formatted preview with highlights and tickable checklists.</p></figcaption></figure>
-    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/review.webp" data-caption="Today, in review · Review of today’s tasks with swipe actions" aria-label="Enlarge: Today, in review"><img src="assets/screenshots/review.webp" alt="Today, in review: Review of today’s tasks with swipe actions, in Pallino." width="1080" height="2400" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Today, in review</h3><p>Done, tomorrow or let go: decide with a single swipe.</p></figcaption></figure>
-    <figure class="gallery-item reveal"><div class="phone"><div class="phone-screen"><button class="screenshot-open" data-image="assets/screenshots/profile.webp" data-caption="Your little world · Local profile, stats, spaces and known places" aria-label="Enlarge: Your little world"><img src="assets/screenshots/profile.webp" alt="Your little world: Local profile, stats, spaces and known places, in Pallino." width="1080" height="2400" loading="lazy"><span class="image-zoom" aria-hidden="true">↗</span></button></div></div><figcaption><h3>Your little world</h3><p>Different spaces with their own prompts, stats and known places.</p></figcaption></figure>
   </div>
 </section>
 <section class="extras-section wrap section">
@@ -201,7 +240,11 @@
     <article class="reveal"><span class="extra-icon"><svg><use href="#i-share"/></svg></span><h3>From notes to tasks</h3><p>Extract to-dos from a note, with rules or with optional AI. Review the suggestions and choose what to create.</p></article>
     <article class="reveal"><span class="extra-icon"><svg><use href="#i-refresh"/></svg></span><h3>Habits stick</h3><p>“Read every day.” Write it once and let recurring tasks keep the rhythm with you.</p></article>
     <article class="reveal"><span class="extra-icon"><svg><use href="#i-search"/></svg></span><h3>Find that thought again</h3><p>One search for tasks and notes. Filter by space, find the right words and pick up where you left off.</p></article>
-    <article class="reveal"><span class="extra-icon"><svg><use href="#i-moon"/></svg></span><h3>Your way to see it</h3><p>Light, dark or Low colour theme. Customise the look and the navigation bar to feel at home.</p></article>
+    <article class="reveal"><span class="extra-icon"><svg><use href="#i-moon"/></svg></span><h3>Your way to see it</h3><p>Light, dark, Low colour or Material You. Customise the look and the navigation bar to feel at home.</p></article>
+    <article class="reveal"><span class="extra-icon"><svg><use href="#i-people"/></svg></span><h3>Spaces to share</h3><p>Invite someone into a space: its tasks, notes and projects stay in step for everyone in it.</p></article>
+    <article class="reveal"><span class="extra-icon"><svg><use href="#i-sigma"/></svg></span><h3>Notes that can do maths</h3><p>Formulas in LaTeX, tables, callouts and code blocks, in plain Markdown that stays yours.</p></article>
+    <article class="reveal"><span class="extra-icon"><svg><use href="#i-image"/></svg></span><h3>A picture, a past</h3><p>Add photos to a note on Android, and go back to its earlier texts with History.</p></article>
+    <article class="reveal"><span class="extra-icon"><svg><use href="#i-key"/></svg></span><h3>Open to your tools</h3><p>API keys for programs that act for you, such as an MCP server, with a say on each space.</p></article>
   </div>
 </section>
 <section id="privacy" class="privacy-section wrap reveal">
@@ -228,13 +271,13 @@
   <div>
     <p class="eyebrow">YOUR IDEAS, CLOSE TO YOU.</p>
     <h2>Your space.<br>Truly <span class="serif">yours.</span></h2>
-    <p>Tasks and notes stay in a local database on your phone. Start in Offline mode with just a local profile, or sync spaces and projects with Pallino Cloud.</p>
-    <p>AI is a choice: extract tasks on your device with local models (Gemma 4 E2B or Qwen3), or turn on Google AI Studio with your own key. You decide.</p>
+    <p>Tasks and notes live in a local database, on your phone or in your browser. Use Pallino with just a local profile, or sign in to Pallino Cloud to keep tasks, notes and spaces in step across your devices.</p>
+    <p>On Android, AI is a choice: extract tasks on your device with local models (Gemma 4 E2B or Qwen3), or turn on Google AI Studio with your own key. You decide.</p>
     <div class="privacy-tags"><span>✓ Works offline</span><span>✓ On-device AI</span><span>✓ Export notes and backups</span></div>
   </div>
 </section>
-<section id="faq" class="faq-section wrap section"><div class="reveal"><p class="eyebrow">JUST A FEW QUESTIONS.</p><h2>Before you <span class="serif">start.</span></h2></div><div class="faq-list reveal"><details><summary>Do I need an account to use Pallino?<span>+</span></summary><p>You can start in offline mode with a local profile. Pallino Cloud is optional: it syncs your profile, spaces and projects across devices, while tasks and notes stay on your phone.</p></details><details><summary>Can I write tasks in English or Italian?<span>+</span></summary><p>Yes, both. Pallino recognises expressions like “tomorrow”, “Friday at 6 pm”, “by Friday”, “every Monday” and “~1h30”, in English and in Italian. The app interface is in English.</p></details><details><summary>Is AI required?<span>+</span></summary><p>No. You can manage tasks, notes and lists and use rule-based extraction without any AI. For AI extraction you can download a local model to your phone (LiteRT-LM) or use Google AI Studio with your own key.</p></details><details><summary>Can I take my notes with me?<span>+</span></summary><p>Of course. You can export all notes as Markdown (`.md`) or in the `.pallino` format, and export or re-import a full `.json` backup from the Profile settings.</p></details></div></section>
-<section class="download-section"><div class="wrap download-inner reveal"><span class="download-flower" aria-hidden="true">✳</span><p class="eyebrow">IT ALL STARTS WITH A SMALL DOT.</p><h2>Make room<br>for good <span class="serif">things.</span><span class="download-dot"></span></h2><p>Your next idea already has a place to go.</p><span class="button dark store-link is-locked" role="link" aria-disabled="true" title="Coming soon on Google Play"><svg><use href="#i-play"/></svg><span><small>COMING SOON ON</small>Google Play</span><svg class="store-arrow"><use href="#i-lock"/></svg></span><span class="download-platform">Made for Android. Made for your everyday.</span></div></section>
+<section id="faq" class="faq-section wrap section"><div class="reveal"><p class="eyebrow">JUST A FEW QUESTIONS.</p><h2>Before you <span class="serif">start.</span></h2></div><div class="faq-list reveal"><details><summary>Do I need an account to use Pallino?<span>+</span></summary><p>No. You can start with a local profile, on Android and on the web, and everything stays on that device. Pallino Cloud is optional: with an account, your tasks, notes, projects and spaces stay in step across phone and computer, and you can share a space with other people.</p></details><details><summary>Where can I use Pallino?<span>+</span></summary><p>In any modern browser at <a class="inline-link" href="https://cloud.pallino.me/">cloud.pallino.me</a>, on a computer or on a phone, and in the Android app, coming soon on Google Play.</p></details><details><summary>How do I install the web app?<span>+</span></summary><p>Open <a class="inline-link" href="https://cloud.pallino.me/">cloud.pallino.me</a>. In Chrome or Edge on a computer, use the install icon in the address bar. On Android, open the Chrome menu and choose “Add to Home screen”. On iPhone, tap Share in Safari and then “Add to Home Screen”.</p></details><details><summary>Is the web app the same as the Android app?<span>+</span></summary><p>Tasks, notes, lists, spaces, search, templates and Pallino Cloud are in both. Focus and its daily review, dictation, AI, adding pictures and reminders with the app closed are on Android.</p></details><details><summary>Can I write tasks in English or Italian?<span>+</span></summary><p>Yes, both. Pallino recognises expressions like “tomorrow”, “Friday at 6 pm”, “by Friday”, “every Monday” and “~1h30”, in English and in Italian. The interface is in English.</p></details><details><summary>Is AI required?<span>+</span></summary><p>No. You can manage tasks, notes and lists and extract tasks by rules (on Android) without any AI. For AI extraction, on Android, you can download a local model to your phone (LiteRT-LM) or use Google AI Studio with your own key.</p></details><details><summary>Can I take my notes with me?<span>+</span></summary><p>Of course. You can export all notes as Markdown (`.md`) or in the `.pallino` format, and export or re-import a full `.json` backup from the Profile settings. Any note can also be printed or saved as PDF.</p></details></div></section>
+<section class="download-section"><div class="wrap download-inner reveal"><span class="download-flower" aria-hidden="true">✳</span><p class="eyebrow">IT ALL STARTS WITH A SMALL DOT.</p><h2>Make room<br>for good <span class="serif">things.</span><span class="download-dot"></span></h2><p>Your next idea already has a place to go.</p><div class="download-actions"><a class="button dark store-link" href="https://cloud.pallino.me/"><svg><use href="#i-globe"/></svg><span><small>DESKTOP &amp; MOBILE</small>Open the web app</span><svg class="store-arrow"><use href="#i-share"/></svg></a><span class="button ghost store-link is-locked" role="link" aria-disabled="true" title="Coming soon on Google Play"><svg><use href="#i-play"/></svg><span><small>COMING SOON ON</small>Google Play</span><svg class="store-arrow"><use href="#i-lock"/></svg></span></div><span class="download-platform">On the web and on Android. Made for your everyday.</span></div></section>
 </main>
 <footer class="footer wrap">
   <a class="brand" href="#" aria-label="Pallino, back to top">
@@ -242,9 +285,11 @@
     <img class="brand-wordmark" src="assets/wordmark.svg" alt="pallino" width="77" height="27">
   </a>
   <span>A little order. A little breathing room.</span>
+  <a href="docs/">Docs</a>
+  <a href="https://cloud.pallino.me/">Web app</a>
   <a href="#main">Back to top ↑</a>
   <small>© <span id="year">2026</span> Pallino</small>
 </footer>
 <button class="motion-toggle" aria-pressed="false" aria-label="Pause animations" title="Pause animations">Ⅱ</button>
-<dialog class="screenshot-dialog" id="screenshot-viewer" aria-label="Enlarged Pallino screenshot"><button class="viewer-close" aria-label="Close the enlarged screenshot">×</button><img class="viewer-image" alt="" width="1080" height="2400"><p class="viewer-caption"></p></dialog>
+<dialog class="screenshot-dialog" id="screenshot-viewer" aria-label="Enlarged Pallino screenshot"><button class="viewer-close" aria-label="Close the enlarged screenshot">×</button><img class="viewer-image" alt=""><p class="viewer-caption"></p></dialog>
 </body></html>

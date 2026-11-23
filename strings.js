@@ -48,7 +48,7 @@ window.STRINGS = {
     capture: {
       number: '01 / Capture',
       title: 'A thought?<br>Catch it on the fly.',
-      description: 'Task, note or list: choose how to capture what is on your mind. Type naturally or dictate a task, and let the ideas keep coming.',
+      description: 'Task, note, list or bookmark: choose how to capture what is on your mind. Type naturally or dictate a task, and let the ideas keep coming.',
       points: [
         'Recognises dates, times, deadlines and duration as you type',
         'Projects (&), tags (#) and reminders (;) in a single sentence',
@@ -75,7 +75,7 @@ window.STRINGS = {
       title: 'Scattered ideas.<br>Finally together.',
       description: 'Thesis ideas, the dinner menu, documents to renew. Keep your notes in their colourful spaces and find them again instantly with tags.',
       points: [
-        'Write in Markdown with highlights and checklists',
+        'Write in Markdown: formulas, tables, callouts and checklists',
         'Organise with coloured spaces, tags, projects and pinned notes',
         'Extract tasks from notes with rules or with local/cloud AI'
       ],
@@ -89,10 +89,51 @@ window.STRINGS = {
       points: [
         'Priority, deadlines, date and space prompt in a single view',
         'A clear reason under every suggested task',
-        'Review today to go through today’s tasks one at a time'
+        'Review today one task at a time: done, tomorrow, skip or discard'
       ],
       image: 'focus',
       caption: 'Focus · tasks ranked by importance, with the reason for each pick'
+    }
+  },
+
+  // Web app section (“On every screen”): a desktop screenshot (web-*.webp, 2200×1375) and the installed PWA on a
+  // phone (pwa-*.webp, 1080×2424) for each tab.
+  web: {
+    tasks: {
+      desktop: 'web-tasks', phone: 'pwa-tasks',
+      caption: 'Your days in a list, and the task you opened right beside it.',
+      desktopAlt: 'Web app · tasks by day, with a task open beside the list',
+      phoneAlt: 'Web app on a phone · tasks by day'
+    },
+    add: {
+      desktop: 'web-add', phone: 'pwa-add',
+      caption: 'One line is enough: dates, priority, project and tags are read as you type.',
+      desktopAlt: 'Web app · a task written in one line, with what Pallino understood',
+      phoneAlt: 'Web app on a phone · Add in the colour of the space'
+    },
+    notes: {
+      desktop: 'web-notes', phone: 'pwa-notes',
+      caption: 'Notes, lists and bookmarks in the colours of their spaces.',
+      desktopAlt: 'Web app · grid of notes with pinned ones first',
+      phoneAlt: 'Web app on a phone · notes in two columns'
+    },
+    split: {
+      desktop: 'web-split', phone: 'pwa-note',
+      caption: 'On a computer, two notes side by side. On a phone, one note and nothing else.',
+      desktopAlt: 'Web app · two notes side by side',
+      phoneAlt: 'Web app on a phone · a note with a formula, a table and callouts'
+    },
+    spaces: {
+      desktop: 'web-space', phone: 'pwa-space',
+      caption: 'Choose a space and the whole window takes its colour.',
+      desktopAlt: 'Web app · a space with its tasks, in its own colour',
+      phoneAlt: 'Web app on a phone · a space with its tasks and projects'
+    },
+    dark: {
+      desktop: 'web-dark', phone: 'pwa-dark',
+      caption: 'Easy on the eyes: the dark theme follows your device.',
+      desktopAlt: 'Web app · notes in the dark theme',
+      phoneAlt: 'Web app on a phone · notes in the dark theme'
     }
   }
 };

@@ -77,17 +77,65 @@ swatches.forEach(swatch => {
 });
 selectSpace('blue');
 
+// A screenshot that opens in the viewer when pressed.
+function screenshotButton(url, caption, width, height) {
+  const button = document.createElement('button');
+  button.className = 'screenshot-open';
+  button.dataset.image = url;
+  button.dataset.caption = caption;
+  button.setAttribute('aria-label', T.viewer.zoomLabel(caption));
+  const image = document.createElement('img');
+  image.loading = 'lazy';
+  image.src = url;
+  image.alt = T.viewer.screenAlt(caption);
+  image.width = width;
+  image.height = height;
+  button.append(image);
+  return button;
+}
+
+function showIn(container, element) {
+  container.replaceChildren(element);
+  container.classList.remove('panel-enter');
+  // Restart the short transition only on explicit navigation.
+  void container.offsetWidth;
+  container.classList.add('panel-enter');
+}
+
+// Clicks, arrows, Home and End move along a row of tabs.
+function wireTabs(row, select) {
+  row.forEach((tab, index) => {
+    tab.addEventListener('click', () => select(tab));
+    tab.addEventListener('keydown', event => {
+      let next;
+      if (event.key === 'ArrowRight') next = (index + 1) % row.length;
+      if (event.key === 'ArrowLeft') next = (index - 1 + row.length) % row.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = row.length - 1;
+      if (next !== undefined) {
+        event.preventDefault();
+        row[next].focus();
+        select(row[next]);
+      }
+    });
+  });
+}
+
+function markSelected(row, selected) {
+  row.forEach(tab => {
+    const active = tab === selected;
+    tab.setAttribute('aria-selected', String(active));
+    tab.tabIndex = active ? 0 : -1;
+  });
+}
+
 const screens = T.screens;
-const tabs = [...document.querySelectorAll('[role="tab"]')];
+const tabs = [...document.querySelectorAll('[role="tab"][data-screen]')];
 const dynamicScreen = document.querySelector('#dynamic-screen');
 const panel = document.querySelector('#showcase-panel');
 function selectScreen(name) {
   const screen = screens[name];
-  tabs.forEach(tab => {
-    const active = tab.dataset.screen === name;
-    tab.setAttribute('aria-selected', String(active));
-    tab.tabIndex = active ? 0 : -1;
-  });
+  markSelected(tabs, tabs.find(tab => tab.dataset.screen === name));
   panel.setAttribute('aria-labelledby', `tab-${name}`);
   document.querySelector('.showcase-number').textContent = screen.number;
   document.querySelector('#showcase-title').innerHTML = screen.title;
@@ -97,40 +145,28 @@ function selectScreen(name) {
     li.textContent = text;
     return li;
   }));
-  const button = document.createElement('button');
-  button.className = 'screenshot-open';
-  button.dataset.image = screen.perSpace ? spaceShotUrl(screen.image, currentSpace) : `assets/screenshots/${screen.image}.webp`;
+  const url = screen.perSpace ? spaceShotUrl(screen.image, currentSpace) : `assets/screenshots/${screen.image}.webp`;
+  const button = screenshotButton(url, screen.caption, 1080, 2424);
   if (screen.perSpace) button.dataset.spaceShot = screen.image;
-  button.dataset.caption = screen.caption;
-  button.setAttribute('aria-label', T.viewer.zoomLabel(screen.caption));
-  const image = document.createElement('img');
-  image.src = button.dataset.image;
-  image.alt = T.viewer.screenAlt(screen.caption);
-  image.width = 1080;
-  image.height = 2424;
-  button.append(image);
-  dynamicScreen.replaceChildren(button);
-  dynamicScreen.classList.remove('panel-enter');
-  // Restart the short transition only on explicit navigation.
-  void dynamicScreen.offsetWidth;
-  dynamicScreen.classList.add('panel-enter');
+  showIn(dynamicScreen, button);
 }
-tabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => selectScreen(tab.dataset.screen));
-  tab.addEventListener('keydown', event => {
-    let next;
-    if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
-    if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
-    if (event.key === 'Home') next = 0;
-    if (event.key === 'End') next = tabs.length - 1;
-    if (next !== undefined) {
-      event.preventDefault();
-      tabs[next].focus();
-      selectScreen(tabs[next].dataset.screen);
-    }
-  });
-});
+wireTabs(tabs, tab => selectScreen(tab.dataset.screen));
 selectScreen('capture');
+
+// Web app: each tab swaps the desktop screenshot and the one of the installed PWA on a phone.
+const webTabs = [...document.querySelectorAll('[role="tab"][data-web-screen]')];
+function selectWebScreen(tab) {
+  const name = tab.dataset.webScreen;
+  const screen = T.web[name];
+  markSelected(webTabs, tab);
+  document.querySelector('#web-panel').setAttribute('aria-labelledby', tab.id);
+  showIn(document.querySelector('#web-screen'), screenshotButton(`assets/screenshots/${screen.desktop}.webp`, screen.desktopAlt, 2200, 1375));
+  showIn(document.querySelector('#web-phone-screen'), screenshotButton(`assets/screenshots/${screen.phone}.webp`, screen.phoneAlt, 1080, 2424));
+  document.querySelector('#web-caption').textContent = screen.caption;
+}
+wireTabs(webTabs, selectWebScreen);
+selectWebScreen(webTabs[0]);
+
 document.querySelector('#year').textContent = new Date().getFullYear();
 
 // A single viewer works for static gallery images and the changing tab preview.
